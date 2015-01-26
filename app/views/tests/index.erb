@@ -1,0 +1,4 @@
+<ul>
+<%- %w[carrefour_atacadao carrefour_normas_condutas carta_andorinha carta_basica carta_ebc_ikesaki carta_epi_walmart carta_johnson_coop carta_normas_walmart carta_razao_social_rede_walmart carta_rede_carrefour carta_rede_gpa carta_rede_makro carta_sonda carta_tenda center_shop contrato_temporario ficha_3 tabela_pis_infoco walmart zaffari].each do |template| %>
+  <li> <%= link_to template.humanize, test_path(template), target: '_blank' %> </li>
+<%- end %>
